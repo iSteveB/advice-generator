@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Sansita&family=Sarala:wght@400;700&display=swap');
+
+body{
+    font-family: Manrope, Helvetica, sans-serif;
+    background-color: hsl(218, 23%, 16%)
+}
+
+p{
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+q{
+    text-align: center;
+    margin: 16px;
+    width: 80%;
+    min-height: 100px;
+    font-size: 28px;
+    color: hsl(193, 38%, 86%);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 540px;
+    height: 335px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 15px;
+}
+
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    position: absolute;
+    top: 300px;
+    transition: all .2s ease-in-out;
+}
+
+button:hover{
+    box-shadow: 0px 0px 20px 0px hsl(150deg 100% 66%);
+    transform: scale(1.05);
+}
+
+button:active{
+    transform: scale(1);
+}
+
+img:nth-child(4){
+    display: none;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 600px) {
+    #quote-box{
+        width: 95%;
+    }
+
+    img:nth-child(4){
+        display: block;
+    }
+
+    img:nth-child(3){
+        display: none;
+    }
+}
